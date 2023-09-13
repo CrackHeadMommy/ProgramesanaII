@@ -33,13 +33,13 @@ class Cilveks:
         else:
             print("Es esmu ", self.dzimums, ".", sep = "")
 
-    def mirt_pavisam(self):
+    def __del__(self):
         print("Visu labu! *nomirst*")
-        self.__del__()
+
 
 pirmais = Cilveks("Anna", 12, "v")
 
 pirmais.mainit_dzimumu("nekatrs")
 pirmais.mainit_vardu("Joe")
 pirmais.svinet_dz_d()
-pirmais.mirt_pavisam()
+del pirmais
