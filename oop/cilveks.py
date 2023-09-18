@@ -37,9 +37,9 @@ class Cilveks:
         print("Visu labu! *nomirst*")
 
 
-pirmais = Cilveks("Anna", 12, "v")
+#pirmais = Cilveks("Anna", 12, "v")
 
-pirmais.mainit_dzimumu("nekatrs")
-pirmais.mainit_vardu("Joe")
-pirmais.svinet_dz_d()
-del pirmais
+#pirmais.mainit_dzimumu("nekatrs")
+#pirmais.mainit_vardu("Joe")
+#pirmais.svinet_dz_d()
+#del pirmais
