@@ -36,10 +36,16 @@ class Cilveks:
     def __del__(self):
         print("Visu labu! *nomirst*")
 
+class sieviete(Cilveks):
+    def __init__(self, name, age, hair_color):
+        super().__init__(name, age, "s")
+        self.matu_krasa = hair_color
+        self.info()
 
-pirmais = Cilveks("Anna", 12, "v")
+    def info(self):
+        super().info()
+        print("Mana matu krasa ir ", self.matu_krasa)
 
-pirmais.mainit_dzimumu("nekatrs")
-pirmais.mainit_vardu("Joe")
-pirmais.svinet_dz_d()
-del pirmais
+pirmais = sieviete("Anna", 18, "blonda")
+pirmais.info()
+        
